@@ -8,7 +8,7 @@
   "orderCode": 1001,
   "orderDetails": "Laptop purchase",
   "orderDate": "2024-10-10",
-  "customerId": "64aef95e456ab97efb5e49a5"  // Reference to the customer in the customers collection
+  "customerId": "670d366b05b8ab0ff1d22f9f"  // Reference to the customer in the customers collection
 }
 #For Customer and Order details. Assume it is a new customer
 {
