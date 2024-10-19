@@ -39,7 +39,4 @@ public class CustomerService {
         }
         return false;
     }
-
-    public void updateCustomer(Long id, CustomerService customerService) {
-    }
 }
