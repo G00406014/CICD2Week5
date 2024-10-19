@@ -40,4 +40,17 @@ public class CustomerController {
         }
         return ResponseEntity.notFound().build();
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Customer> updateCustomer(@PathVariable String id, @Valid @RequestBody Customer customer) {
+        Optional<Customer> existingCustomer = customerService.getCustomerById(id);
+
+        if (existingCustomer.isPresent()) {
+            customer.setId(id);
+            Customer updated = customerService.updateCustomer(customer);
+            return ResponseEntity.ok(updated);
+        }
+
+        return ResponseEntity.notFound().build();
+    }
 }

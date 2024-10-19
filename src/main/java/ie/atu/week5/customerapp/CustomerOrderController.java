@@ -13,11 +13,10 @@ import jakarta.validation.Valid;
 public class CustomerOrderController {
 
     private final CustomerService customerService;
-    private final OrderService orderService; // Include OrderService
-
+    private final OrderService orderService;
     public CustomerOrderController(CustomerService customerService, OrderService orderService) {
         this.customerService = customerService;
-        this.orderService = orderService; // Inject OrderService
+        this.orderService = orderService; //
     }
 
     @PostMapping("/customer-with-orders")
