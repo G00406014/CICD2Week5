@@ -28,11 +28,18 @@ public class CustomerService {
         return customerRepository.save(customer);
     }
 
+    public Customer updateCustomer(Customer customer) {
+        return customerRepository.save(customer);
+    }
+
     public boolean deleteCustomer(String id) {
         if (customerRepository.existsById(id)) {
             customerRepository.deleteById(id);
             return true;
         }
         return false;
+    }
+
+    public void updateCustomer(Long id, CustomerService customerService) {
     }
 }
